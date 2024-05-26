@@ -23,5 +23,6 @@ namespace AlmoxarifadoInfrastructure.Data
 
 
         public DbSet<Grupo> Grupo { get; set; }
+        public DbSet<ITENS_NOTA> Itens_Nota { get; set; }
     }
 }
