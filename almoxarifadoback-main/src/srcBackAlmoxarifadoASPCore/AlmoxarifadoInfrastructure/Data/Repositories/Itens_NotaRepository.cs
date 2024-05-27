@@ -56,5 +56,20 @@ namespace AlmoxarifadoInfrastructure.Data.Repositories
 
             return itens;
         }
+        public void AtualizarItem(ITENS_NOTA item)
+        {
+            _context.Itens_Nota.Update(item);
+            _context.SaveChanges();
+        }
+
+        public void DeletarItem(int id)
+        {
+            var item = _context.Itens_Nota.Find(id);
+            if (item != null)
+            {
+                _context.Itens_Nota.Remove(item);
+                _context.SaveChanges();
+            }
+        }
     }
 }

@@ -11,7 +11,8 @@ namespace AlmoxarifadoInfrastructure.Data.Interfaces
     {
         List<ITENS_NOTA> ObterTodosOsItens();
         ITENS_NOTA ObterItensPorId(int id);
-
         ITENS_NOTA CriarItem(ITENS_NOTA itens);
+        void AtualizarItem(ITENS_NOTA item);
+        void DeletarItem(int id);
     }
 }

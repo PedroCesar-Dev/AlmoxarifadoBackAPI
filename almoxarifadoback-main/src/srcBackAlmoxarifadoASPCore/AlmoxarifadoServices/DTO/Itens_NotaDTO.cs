@@ -4,24 +4,35 @@ namespace AlmoxarifadoServices.DTO
 {
     public class Itens_NotaGetDTO
     {
-        public int ItemNum { get; set; }
-        public int IdProduto { get; set; }
-        public int IdNota { get; set; }
-        public int IdSec { get; set; }
-        public BigInteger? QuantidadeProduto { get; set; }
-        public double? PrecoUnitario { get; set; }
-        public double? TotalItem { get; set; }
-        public double? EstoqueLinha { get; set; }
+        public int ITEM_NUM { get; set; }
+        public int ID_PRO { get; set; }
+        public int ID_NOTA { get; set; }
+        public int ID_SEC { get; set; }
+        public BigInteger? QTD_PRO { get; set; }
+        public double? PRE_UNIT { get; set; }
+        public double? TOTAL_ITEM { get; set; }
+        public double? EST_LIN { get; set; }
     }
     public class Itens_NotaPostDTO
     {
-        public int ItemNum { get; set; }
-        public int IdProduto { get; set; }
-        public int IdNota { get; set; }
-        public int IdSec { get; set; }
-        public BigInteger? QuantidadeProduto { get; set; }
-        public double? PrecoUnitario { get; set; }
-        public double? TotalItem { get; set; }
-        public double? EstoqueLinha { get; set; }
+        public int ITEM_NUM { get; set; }
+        public int ID_PRO { get; set; }
+        public int ID_NOTA { get; set; }
+        public int ID_SEC { get; set; }
+        public BigInteger? QTD_PRO { get; set; }
+        public double? PRE_UNIT { get; set; }
+        public double? TOTAL_ITEM { get; set; }
+        public double? EST_LIN { get; set; }
+    }
+    public class Itens_NotaPutDTO
+    {
+        public int ITEM_NUM { get; set; }
+        public int ID_PRO { get; set; }
+        public int ID_NOTA { get; set; }
+        public int ID_SEC { get; set; }
+        public int QTD_PRO { get; set; }
+        public decimal PRE_UNIT { get; set; }
+        public decimal TOTAL_ITEM { get; set; }
+        public string EST_LIN { get; set; }
     }
 }
